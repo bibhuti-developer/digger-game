@@ -27,3 +27,8 @@ function create ()
     this.add.sprite(500, 500, 'blast0').play('explosion');
 }
 ```
+# display image x, y
+```
+<imageobject>.x
+<imageobject>.y
+```

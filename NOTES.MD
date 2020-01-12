@@ -27,6 +27,25 @@ function create ()
     this.add.sprite(500, 500, 'blast0').play('explosion');
 }
 ```
+```
+        this.anims.create({
+            key: 'walkStraight',
+            frames: [
+                { key: 'spider'},
+                { key: 'spider2'},
+                { key: 'spider3'},
+                { key: 'spider4'},
+                { key: 'spider5'},
+                { key: 'spider6', duration: 100}
+            ],
+            frameRate: 8,
+            repeat: -1
+
+        });
+
+        this.add.sprite(100, 655, 'spider').play('walkStraight');
+```
+
 # display image x, y
 ```
 <imageobject>.x

@@ -51,3 +51,19 @@ export class SimpleScene extends Phaser.Scene {
   }
 }
 ```
+
+# delete group
+1. [remove]: remove one member from the group (and the scene, if specified)﻿
+2. [clear]: remove all members from the group (and the scene, if specified)
+3. [destroy]: clear, then disconnect the group from the scene
+```
+this.imageGroup = this.add.group();
+
+for( var i = 0 ; i < 10 ; i++)
+{
+  var image = this.add.image(100*i, 100*i, "box"); // Add Image
+  this.imageGroup.add(image); // added image to group
+}
+
+this.imageGroup.clear(true);﻿ // Remove all Children.
+```

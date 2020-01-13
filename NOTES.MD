@@ -86,3 +86,19 @@ for( var i = 0 ; i < 10 ; i++)
 
 this.imageGroup.clear(true);﻿ // Remove all Children.
 ```
+
+# adding image from sprite or atlas
+```
+this.load.atlas("badgeSprite", "assets/sprite/badge/spritesheet.png","assets/sprite/badge/spritesheet.json");
+...
+this.add.sprite(100,200,"badgeSprite","badge_1");
+```
+or
+```
+this.load.spritesheet("badgeSprite", "assets/sprite/badge/spritesheet.png",{
+  frameWidth: 128,
+  frameHeight: 128
+});
+...
+this.add.sprite(100,200,"badgeSprite",4);
+```
